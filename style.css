@@ -78,10 +78,24 @@ img{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media(min-width : 800px){
+    
+    body{
+        font-size : 0.9375rem;
+    }
+    
+    .container{
+        display : flex;
+        flex-direction: column;
+        margin-block : 1.5em;
+    }
 
     .header{
         max-width : 500px;
         margin : 0 auto;
+    }
+    
+    .header__title{
+        font-size: 2.5rem;
     }
 
     .container__card{
@@ -92,11 +106,13 @@ img{
     }
 
     .card{
+        flex : 1;
         margin-inline : 1em;
     }
 
     .card:hover{
         transform : translateY(-.25em);
+        transition: all 0.3s;
         cursor: pointer;
     }
 
@@ -116,8 +132,4 @@ img{
         box-shadow : 10px 10px 15px -5px hsl(228, 45%, 44%);
     }
     
-    .attribution{
-         position : absolute; 
-        bottom : 0;
-        left : 40vw;
 }
